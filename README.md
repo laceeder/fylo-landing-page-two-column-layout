@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://your-solution-url.com)
-- Live Site URL: [Vercel](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/laceeder/fylo-landing-page-two-column-layout)
+- Live Site URL: [Vercel](https://fylo-landing-page-two-column-layout.vercel.app/)
 
 ## My process
 

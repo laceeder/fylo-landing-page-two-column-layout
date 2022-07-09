@@ -1,0 +1,1067 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+   html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+  }
+  
+  /*
+   * Remove text-shadow in selection highlight:
+   * https://twitter.com/miketaylr/status/12228805301
+   *
+   * Vendor-prefixed and regular ::selection selectors cannot be combined:
+   * https://stackoverflow.com/a/16982510/7133471
+   *
+   * Customize the background color to match your design.
+   */
+  
+  ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  ::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  /*
+   * A better looking default horizontal rule
+   */
+  
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+  }
+  
+  /*
+   * Remove the gap between audio, canvas, iframes,
+   * images, videos and the bottom of their containers:
+   * https://github.com/h5bp/html5-boilerplate/issues/440
+   */
+  
+  audio,
+  canvas,
+  iframe,
+  img,
+  svg,
+  video {
+    vertical-align: middle;
+  }
+  
+  /*
+   * Remove default fieldset styles.
+   */
+  
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*
+   * Allow only vertical resizing of textareas.
+   */
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  /* ==========================================================================
+     Author's custom styles
+    ========================================================================== */
+
+    /* Mobile and Base Styles */
+
+    html,body {
+      margin:0;
+      padding:0;
+      overflow-x:hidden;
+    }
+
+    html {
+      font-size: 16px;
+      box-sizing: border-box;
+      min-width: 359px;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-size: 1em;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      background: transparent;
+    }
+
+    header {
+      color: hsl(0, 0%, 100%);
+    }
+
+    header .header-wrapper {
+      padding: 1.875rem 1.25rem;
+    }
+
+    .logo img {
+      width: 50%;
+    }
+
+    header nav {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .header-wrapper .nav-links {
+      font-family: 'Raleway', sans-serif;
+      display: flex;
+      justify-content: space-between;
+      gap: 1.125rem;
+    }
+
+    .header-wrapper .nav-links a {
+      font-size: 0.75em;
+      color: hsl(0, 0%, 0%);
+      text-decoration: none;
+    }
+
+    .content-wrapper {
+      margin: 3.875rem 0 0 0;
+    }
+
+    .fylo-info, .product-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .fylo-info img, .product-info img {
+      width: 95%;
+    }
+
+    h1 {
+      font-size: 1.5em;
+      text-align: center;
+      margin: 2.5rem 1.25rem 1.563rem;
+    }
+
+    .text {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 0.875em;
+      text-align: center;
+    }
+
+    .fylo-info .text {
+      margin: 0 1.5rem 1.875rem;
+    }
+
+    .email-text {
+      font-size: 0.875em;
+      opacity: 45%;
+      width: 17.625rem;
+      height: 2.25rem;
+      border: 0.063rem solid hsl(0, 0%, 0%);
+      border-radius: 0.125rem;
+      margin: 0 1.25rem 0.938rem 2.313rem;
+      padding: 0 0 0 1.25rem;
+    }
+
+    .email-text:hover {
+      border: hsl(0, 100%, 63%);
+      opacity: 100%;
+    }
+
+    .get-started {
+      font-family: 'Raleway', sans-serif;
+      font-size: 0.875em;
+      font-weight: 700;
+      background-color: hsl(224, 93%, 58%);
+      color: hsl(0, 0%, 100%);
+      width: 19.125rem;
+      height: 2.25rem;
+      border: none;
+      border-radius: 0.125rem;
+      padding: 0.563rem;
+      margin: 0 1.25rem 8.125rem 2.25rem;
+    }
+
+    .get-started:hover {
+      background-color: 	hsl(221, 100%, 71%);
+    }
+
+    .second-column-top {
+      background: url(../images/bg-curve-mobile.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 3.188rem;
+    }
+
+    .second-column {
+      background-color: hsl(240, 75%, 98%);
+      padding: 3.125rem 1.25rem;
+    }
+
+    h2 {
+      font-size: 1em;
+      text-align: center;
+      margin: 5rem 0.938rem 1.563rem;
+    }
+
+    .product-info .text {
+      font-size: 0.8438em;
+      color: hsl(243, 87%, 12%);
+      margin: 0 0.375rem 2.188rem;
+      text-align: start;
+      opacity: 85%;
+    }
+
+    .fylo-works {
+      margin: 0 0 2.5rem;
+    }
+
+    .fylo-works a {
+      font-size: 0.875em;
+      color: hsl(170, 45%, 43%);
+      text-decoration: none;
+      border-bottom: 0.063rem solid hsl(0, 0%, 0%);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.438rem;
+      margin: 0 5.313rem;
+    }
+
+    .fylo-works img {
+      width: 10%;
+    }
+
+    .second-column .testimonial-card {
+      background-color: hsl(0, 0%, 100%);
+      box-shadow: 0.063rem 0.25rem 0.625rem 0 hsl(250, 33%, 96%);
+      margin: 1.25rem 0;
+      padding: 1.25rem;
+    }
+
+    .testimonial-card img {
+      width: 10%;
+      margin: 0 0.438rem;
+    }
+
+    .card-content {
+      margin: 0 0.438rem;
+      line-height: 1.625;
+    }
+
+    .card-content .quote-text, .kyle-info .name {
+      font-size: 0.6875em;
+    }
+
+    .card-content .quote-text {
+      margin: 0.625rem 0 0.625rem;
+    }
+
+    .card-content .avatar {
+      width: 10%;
+      border-radius: 3.75rem;
+      margin: 0;
+    }
+
+    .card-content .kyle-info {
+      display: flex;
+      align-items: center;
+      gap: 0.625rem;
+    }
+
+    .kyle-info .name {
+      font-family: 'Raleway', sans-serif;
+      margin: 0;
+    }
+
+    .kyle-info .info {
+      font-size: 0.625em;
+      margin: 0;
+    }
+
+    .bottom-section {
+      background-color: hsl(238, 22%, 44%);
+      color:hsl(0, 0%, 100%);
+    }
+
+    .bottom-section h2 {
+      margin: 0;
+      padding: 3.75rem 0 0.625rem;
+    }
+
+    .bottom-section .text {
+      font-size: 0.8438em;
+      margin: 0.625rem 2.5rem 1.25rem;
+      opacity: 80%;
+      line-height: 1.625;
+    }
+
+    .bottom-section .email-text {
+      opacity: 100%;
+      font-size: 0.625em;
+      width: 13.188rem;
+      margin: 0 1.25rem 0.5rem 4.5rem;
+      padding: 0 0 0 0.625rem;
+    }
+
+    .bottom-section .get-started {
+      font-size: 0.625em;
+      width: 13.875rem;
+      margin: 0 1.25rem 4.063rem 4.5rem;
+      padding: 0;
+    }
+    
+    footer .footer-wrapper {
+      background-color: hsl(243, 87%, 12%);
+      color: hsl(0, 0%, 100%);
+    }
+
+    .footer-wrapper .footer-content {
+      display: flex;
+      flex-direction: column;
+      padding: 4.375rem 2.5rem;
+    }
+
+    .footer-content .links-middle {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin: 3rem 0;
+      gap: 2.188rem;
+    }
+
+    .footer-content .footer-links1 a, .footer-content .footer-links2 a {
+      width: 7.5rem;
+      display: block;
+      color:hsl(0, 0%, 100%);
+      text-decoration: none;
+      margin: 0 0 1rem;
+    }
+
+    .contact-area-left .logo-white {
+      margin: 0 0 1.875rem;
+    }
+
+    .contact-area-left .contact-section {
+      margin: 0 0 0.938rem;
+    }
+
+    .footer-content .social-media-right {
+      text-align: center;
+    }
+
+    .footer-content .social-media-right a {
+      width: 1.25rem;
+      color: hsl(0, 0%, 100%);
+      padding: 0.15rem 0.188rem;
+      border: 0.063rem solid hsl(0, 0%, 100%);
+      border-radius: 2.5rem;
+      display: inline-block;
+      margin: 0 0 1rem 0.488rem;
+    }
+
+    .footer-content .social-media-right a:hover {
+      color: hsl(221, 100%, 71%);
+    }
+
+    
+  /* ==========================================================================
+     Helper classes
+     ========================================================================== */
+  
+  /*
+   * Hide visually and from screen readers
+   */
+  
+   .hidden,
+   [hidden] {
+     display: none !important;
+   }
+   
+   /*
+    * Hide only visually, but have it available for screen readers:
+    * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+    *
+    * 1. For long content, line feeds are not interpreted as spaces and small width
+    *    causes content to wrap 1 word per line:
+    *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+    */
+   
+   .sr-only {
+     border: 0;
+     clip: rect(0, 0, 0, 0);
+     height: 1px;
+     margin: -1px;
+     overflow: hidden;
+     padding: 0;
+     position: absolute;
+     white-space: nowrap;
+     width: 1px;
+     /* 1 */
+   }
+   
+   /*
+    * Extends the .sr-only class to allow the element
+    * to be focusable when navigated to via the keyboard:
+    * https://www.drupal.org/node/897638
+    */
+   
+   .sr-only.focusable:active,
+   .sr-only.focusable:focus {
+     clip: auto;
+     height: auto;
+     margin: 0;
+     overflow: visible;
+     position: static;
+     white-space: inherit;
+     width: auto;
+   }
+   
+   /*
+    * Hide visually and from screen readers, but maintain layout
+    */
+   
+   .invisible {
+     visibility: hidden;
+   }
+   
+   /*
+    * Clearfix: contain floats
+    *
+    * For modern browsers
+    * 1. The space content is one way to avoid an Opera bug when the
+    *    `contenteditable` attribute is included anywhere else in the document.
+    *    Otherwise it causes space to appear at the top and bottom of elements
+    *    that receive the `clearfix` class.
+    * 2. The use of `table` rather than `block` is only necessary if using
+    *    `:before` to contain the top-margins of child elements.
+    */
+   
+   .clearfix::before,
+   .clearfix::after {
+     content: " ";
+     display: table;
+   }
+   
+   .clearfix::after {
+     clear: both;
+   }
+   
+   /* ==========================================================================
+      EXAMPLE Media Queries for Responsive Design.
+      These examples override the primary ('mobile first') styles.
+      Modify as content requires.
+      ========================================================================== */
+   
+   @media only screen and (min-width: 760px) {
+     /*Tablet styles*/
+
+     .logo img  {
+      width: 60%;
+     }
+
+     .header-wrapper .nav-links {
+      gap: 1.563rem;
+     }
+
+     .header-wrapper .nav-links a {
+      font-size: 0.875rem;
+     }
+
+     .fylo-info img, .product-info img {
+      width: 75%;
+     }
+
+     h1 {
+      font-size: 2rem;
+     }
+
+     .fylo-info .text {
+      margin: 0 4.813rem 1.875rem;
+     }
+
+     .fylo-info .form {
+      display: flex;
+      flex-direction: column;
+     }
+
+     .email-text {
+      width: 23.875rem;
+      height: 2.875rem;
+      margin: 0 1.25rem 0.938rem 11.063rem;
+     }
+
+     .get-started {
+      font-size: 1rem;
+      width: 25.25rem;
+      height: 2.875rem;
+      margin: 0 1.25rem 7.5rem 11.125rem;
+     }
+
+     .second-column-top {
+      background-size: cover;
+      height: 4.125rem;
+     }
+
+     h2 {
+      font-size: 1.5rem;
+     }
+
+     .product-info .text {
+      font-size: 0.875rem;
+      margin: 0 7.563rem 4.688rem;
+      text-align: center;
+     }
+
+     .fylo-works a {
+      margin: 0 17.813rem;
+     }
+
+     .fylo-works .arrow {
+      width: 10%;
+     }
+
+     .second-column .testimonial-card {
+      margin: 1.25rem 9.563rem;
+      padding: 1.25rem 3.125rem;
+     }
+
+     .testimonial-card img {
+      width: 10%;
+     }
+
+     .bottom-section .text {
+      margin: 0.625rem 7.875rem 1.25rem;
+     }
+
+     .bottom-section .form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     }
+
+     .bottom-section .email-text {
+      width: 23.875rem;
+      margin: 0 0 0.5rem;
+     }
+
+     .bottom-section .get-started {
+      width: 24.625rem;
+      margin: 0 0 5rem;
+     }
+
+     footer .footer-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     }
+
+     .footer-wrapper .footer-content {
+      align-items: center;
+     }
+
+     .footer-content .links-middle {
+      gap: 0;
+     }
+
+     .links-middle .footer-links1 {
+      grid-row: 1/1;
+      grid-column: 1/2;
+      margin: 0 0 0 1.875rem;
+     }
+
+     .links-middle .footer-links2 {
+      grid-row: 2/-1;
+      grid-column: 2/3;
+     }
+
+     .footer-content .social-media-right {
+      margin: 0 1.875rem 0 0;
+     }
+   }
+
+   @media only screen and (min-width: 1024px) {
+    /*Laptop styles*/
+
+    .logo img {
+      width: 70%;
+    }
+
+    header .header-wrapper {
+      padding: 3.125rem 2.5rem 0 3.75rem;
+    }
+
+    .header-wrapper .nav-links {
+      gap: 2.813rem;
+    }
+
+    .header-wrapper .nav-links a {
+      font-size: 0.75em;
+      align-self: flex-end;
+    }
+
+    .fylo-info, .product-info {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .fylo-info {
+      margin: 0 1.875rem 7.563rem;
+    }
+
+    .fylo-info img, .product-info img {
+      width: 95%;
+      grid-row: 1/1;
+      grid-column: 2/3;
+    }
+
+    .fylo-info .info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    h1 {
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.625rem;
+      text-align: start;
+      margin: 1.25rem 3.75rem 0.938rem 1.875rem;
+    }
+
+    .fylo-info .text {
+      font-size: 0.75rem;
+      text-align: start;
+      margin: 0 3.813rem 0.938rem 1.875rem;
+    }
+
+    .fylo-info .form {
+      flex-direction: row;
+    }
+
+    .email-text {
+      font-size: 0.625em;
+      width: 12.75rem;
+      height: 1.875rem;
+      margin: 0 0 0 1.875rem;
+      padding: 0 0 0 0.625rem;
+    }
+
+    .get-started {
+      font-size: 0.5625em;
+      width: 7.938rem;
+      height: 2rem;
+      margin: 0 0 0 0.625rem;
+    }
+
+    .second-column-top {
+      height: 6rem;
+    }
+
+    .second-column {
+      padding: 3.125rem 1.25rem 2.5rem;
+    }
+
+    .product-info {
+      margin: 0 0.625rem 0;
+      gap: 1.563rem;
+    }
+
+    .product-info .people {
+      width: 85%;
+      padding: 0 0 2.813rem 5.063rem;
+    }
+
+    h2 {
+      font-size: 1.625em;
+    }
+
+    .product-info h2 {
+      font-family: 'Raleway', sans-serif;
+      text-align: start;
+      grid-row: 1/2;
+      grid-column: 1/2;
+      margin: 1.25rem 1.25rem 1.563rem;
+    }
+
+    .product-info .text {
+      font-size: 0.7813em;
+      text-align: start;
+      grid-row: 2/2;
+      grid-column: 1/2;
+      margin: 0 1.875rem 1.25rem;
+    }
+
+    .fylo-works a {
+      font-size: 0.75em;
+      width: 8.188rem;
+      display: grid;
+      grid-template-rows: repeat(1, 1fr);
+      grid-row: 1/2;
+      grid-column: 1/2;
+      gap: 0;
+      margin: 0 1.875rem;
+    }
+
+    .fylo-works .arrow {
+      width: 70%;
+      grid-row: 1/2;
+      grid-column: 2/3;
+      margin: 0 0 0 0.313rem;
+    }
+
+    .second-column .testimonial-card {
+      margin: 1.25rem 10rem 1.25rem 1.875rem;
+      padding: 0.625rem 1.25rem;
+    }
+
+    .testimonial-card img {
+      width: 5%;
+    }
+
+    .bottom-section {
+      display: flex;
+    }
+
+    .bottom-section h2 {
+      text-align: start;
+      margin: 0 3.125rem 0;
+    }
+
+    .bottom-section .text {
+      font-size: 0.75em;
+      text-align: start;
+      margin: 0.625rem 12.875rem 5rem 3.125rem;
+    }
+
+    .bottom-section .form {
+      padding: 4.375rem 0 0;
+    }
+
+    .bottom-section .email-text {
+      width: 21.688rem;
+      height: 2.188rem;
+      margin: 0 2.438rem 0.625rem 0;
+    }
+
+    .bottom-section .get-started {
+      width: 9.375rem;
+      height: 2.188rem;
+      margin: 0 15.438rem 5rem 0;
+    }
+
+    footer .footer-wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: start;
+    }
+
+    .footer-wrapper .footer-content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding: 0 3.125rem 4.375rem;
+    }
+
+    .footer-content .contact-area-left {
+      grid-row: 1/2;
+      grid-column: 1/2;
+    }
+
+    .contact-area-left .logo-white {
+      width: 55%;
+    }
+
+    .contact-area-left .contact-section {
+      font-size: 0.75em;
+    }
+
+    .contact-info img {
+      margin: 0 0.625rem 0 0;
+    }
+
+    .footer-content .links-middle {
+      margin: 0;
+    }
+
+    .footer-content .footer-links1 a, .footer-content .footer-links2 a {
+      font-size: 0.75em;
+    }
+
+    .links-middle .footer-links1 {
+      margin: 8.125rem 0 0 10rem;
+    }
+
+    .links-middle .footer-links2 {
+      margin: 8.125rem 3.75rem 0 0;
+    }
+
+    .footer-content .social-media-right {
+      grid-row: 1/2;
+      grid-column: 3/4;
+      margin: 2.5rem 1.875rem 0 0;
+    }
+   }
+
+   @media only screen and (min-width: 1440px) {
+    /*Desktop styles*/
+
+    header .header-wrapper {
+      padding: 4.375rem 4.375rem 0 5rem;
+    }
+
+    .logo img {
+      width: 100%;
+    }
+
+    .header-wrapper .nav-links {
+      padding: 0 0 1.875rem 0;
+    }
+
+    .header-wrapper .nav-links a {
+      font-size: 1em;
+    }
+
+    .fylo-info .info {
+      padding: 0 0 5.5rem 1.25rem;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin: 1.25rem 3.125rem 0.938rem 1.875rem;
+    }
+
+    .fylo-info .text {
+      font-size: 1.125em;
+    }
+
+    .fylo-info img {
+      padding: 0 0 0 0.625rem;
+    }
+
+    .email-text {
+      font-size: 0.875em;
+      width: 19.313rem;
+      height: 2.5rem;
+      margin: 0 0 0 1.875rem;
+      padding: 0 0 0 0.625rem;
+    }
+
+    .get-started {
+      font-size: 0.875em;
+      width: 12.313rem;
+      height: 2.625rem;
+      margin: 0 0 0 0.938rem;
+    }
+
+    .second-column-top {
+      height: 8.188rem;
+    }
+
+    .second-column {
+      padding: 3.125rem 1.25rem 0;
+    }
+
+    .product-info {
+      gap: 0;
+    }
+
+    .info {
+      margin: 0 0 6.938rem 0;
+    }
+
+    .product-info h2 {
+      font-size: 2.5em;
+      margin: 1.25rem 0 1.563rem;
+      padding: 0 0 0 40px;
+    }
+
+    .product-info .text {
+      font-size: 1.0313em;
+      margin: 0 4.25rem 1.25rem 0;
+      padding: 0 0 0 2.5rem;
+    }
+
+    .fylo-works a {
+      margin: 0 2.5rem;
+    }
+
+    .second-column .testimonial-card {
+      margin: 1.25rem 19rem 1.25rem 2.5rem;
+      padding: 1.25rem 1.25rem 1.875rem;
+    }
+
+    .card-content .quote-text {
+      margin: 0.625rem 0 0.938rem;
+      font-size: 0.875em;
+      line-height: 1.625;
+    }
+
+    .bottom-section {
+      padding: 0 0 0 4.375rem;
+    }
+
+    .bottom-section h2 {
+      font-size: 2em;
+      margin: 0 3.125rem 0 0;
+      padding: 5.313rem 0 0.625rem;
+    }
+
+    .bottom-section .text {
+      font-size: 1em;
+      margin: 0.625rem 17rem 5rem 0;
+    }
+
+    .bottom-section .form {
+      padding: 5.625rem 0 0;
+    }
+
+    .bottom-section .email-text {
+      font-size: 0.8125em;
+      width: 31.5rem;
+      height: 2.813rem;
+      margin: 0 5rem 0.625rem 0;
+      padding: 0 0 0 1.25rem;
+    }
+
+    .bottom-section .get-started {
+      width: 13.75rem;
+      height: 2.813rem;
+      margin: 0 24.188rem 5rem 0;
+    }
+
+    .footer-wrapper .footer-content {
+      padding: 1.25rem 4.375rem 3.125rem;
+    }
+
+    .contact-area-left .logo-white {
+      width: 45%;
+    }
+
+    .contact-area-left .contact-section {
+      font-size: 1em;
+    }
+
+    .footer-content .links-middle {
+      margin: 1.25rem 3rem 0 0;
+      gap: 8.75rem;
+    }
+
+    .links-middle .footer-links1 {
+      margin: 8.125rem 0 0 1.875rem;
+    }
+
+    .links-middle .footer-links2 {
+      margin: 8.125rem 3.75rem 0 0;
+    }
+
+    .footer-content .footer-links1 a, .footer-content .footer-links2 a {
+      font-size: 1em;
+    }
+
+    .footer-content .social-media-right {
+      margin: 2.5rem 6.5rem 0 0;
+    }
+
+   }
+
+   
+    
+    
+    
+  @media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
